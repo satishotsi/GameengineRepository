@@ -43,6 +43,9 @@ public class CacheConfiguration {
             createCache(cm, com.pycker.gameengine.domain.User.class.getName());
             createCache(cm, com.pycker.gameengine.domain.Authority.class.getName());
             createCache(cm, com.pycker.gameengine.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.pycker.gameengine.domain.Contest.class.getName());
+            createCache(cm, com.pycker.gameengine.domain.Contest.class.getName() + ".announcements");
+            createCache(cm, com.pycker.gameengine.domain.Announcement.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
